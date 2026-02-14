@@ -1,0 +1,70 @@
+p {
+    color: red;
+    text-shadow: 1px 1px 1px;
+    border-radius: 75%;
+
+}
+
+div{
+    background-color: black;
+    text-align: center;
+
+}
+
+body {
+  margin: 0;
+  color: red;
+  font-family: Arial, sans-serif;
+  background: black;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+   max-width: 500px;      /* prueba 700px–1000px */
+  margin: 0 auto;        /* centra el bloque */
+  padding: 0px;   
+}
+
+.text {
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.hearts {
+  font-size: 28px;
+  line-height: 1.8;
+  animation: float 3s ease-in-out infinite;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: 40px;
+}
+
+@keyframes float {
+  20% { transform: translateY(0); }
+  20% { transform: translateY(-10px); }
+  10% { transform: translateY(0); }
+}
+
+.images-container {
+
+  justify-content: center;   /* centra horizontalmente */
+  gap: 10px;  
+   margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.images-container img {
+  max-width: 150px;          /* ajusta el tamaño */
+  border-radius: 10px;       /* opcional, queda muy bonito */
+}
