@@ -50,8 +50,34 @@
             <img class="col-4" src="./img/WhatsApp Image 2026-02-14 at 10.15.51.jpeg" alt="">
             <img class="col-4"  src="./img/WhatsApp Image 2026-02-14 at 10.16.37.jpeg" alt="">
         </div>
+        <div>
+            <!-- Audio oculto -->
+<audio id="miAudio">
+  <source src="./mp3/Grabación (4).mp3" type="audio/mpeg ">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<!-- Botón personalizado -->
+<button id="playButton">▶️ Reproducir</button>
+
+<script>
+  const audio = document.getElementById('miAudio');
+  const button = document.getElementById('playButton');
+
+  button.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      button.textContent = '⏸️ Pausar';
+    } else {
+      audio.pause();
+      button.textContent = '▶️ Reproducir';
+    }
+  });
+</script>
+        </div>
 
     </div>
 </body>
 
 </html>
+
